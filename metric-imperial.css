@@ -1,0 +1,116 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #F4F4F4;
+}
+.main-1{
+    background-color: #cd43ff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    min-width: 500px;
+} 
+
+.main-1-heading {
+    font-family: 'Inter', sans-serif;
+    color: #353535;
+}
+
+#input-num{
+    font-family: 'Inter', sans-serif;
+    font-size: 50px;
+    background-color: #cd43ff;
+    text-align: center;
+    color: brown;
+    border: 1px solid white;
+    border-radius: 10px;
+    width: 117px;
+    height: 83px;
+    margin-bottom: 30px;
+    outline: none;
+}
+
+.convert-btn{
+    width: 117px;
+    height: 42px;
+    border-radius: 5px;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    color: brown;
+} 
+.convert-btn:hover {
+    cursor: pointer;
+}
+
+.main-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+
+}
+.result-display{
+    width: 500px;
+    height: 109px;
+    background-color: #FFFFFF;
+    margin: 30px;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    color: #353535;
+    border-radius: 5px;
+}
+.result-display p{
+    color: brown;
+}
+
+/* Custom Scrollbar */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #cd43ff;
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #cd43ff;
+    border-radius: 5px;
+  }
+
+  /* To remove arrows from input field */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media only screen and (max-width: 480px) {
+
+    .main-1-heading{
+        width: 530px;
+        display: block;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+
+    .result-display{
+        margin-left: 85px;
+    }
+
+    .main-1{
+        width: 100vh;
+    }
+
+    .main-2{
+        width: 100vh;
+    }
+}
